@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-22.04
+    name: A job to test rootless docker available on ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: devecorsoft/install-rootless-docker@main
+
+      - run: |
+          whoami
+          docker ps

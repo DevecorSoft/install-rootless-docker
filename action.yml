@@ -1,0 +1,8 @@
+name: 'install-rootless-docker'
+description: 'enable rootless docker on self-hosted runner which mark privileged as false'
+runs:
+  using: "composite"
+  steps:
+    - name: 'install-rootless-docker'
+      run: install-rootless-docker.sh
+      shell: bash
