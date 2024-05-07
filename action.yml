@@ -4,5 +4,5 @@ runs:
   using: "composite"
   steps:
     - name: 'install-rootless-docker'
-      run: install-rootless-docker.sh
+      run: ./install-rootless-docker.sh
       shell: bash
