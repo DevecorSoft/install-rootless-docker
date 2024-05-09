@@ -2,7 +2,7 @@ on: [push]
 
 jobs:
   hello_world_job:
-    runs-on: ubuntu-22.04
+    runs-on: non-privileged-runner
     name: A job to test rootless docker available on ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
